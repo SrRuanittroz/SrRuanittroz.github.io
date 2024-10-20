@@ -18,25 +18,25 @@
     <h2>Informe:</h2>
     <form action="mailto:ruanusbd@gmail.com" method="get" onsubmit="return enviarEmail();">
 
-        <table border=1>
-            <tbody>
-                <tr>
-                    <td><label for="nome">Nome:</label></td>
-                    <td><input type="text" id="nome" name="nome" required placeholder="Preencha com seu nome."></td>
-                </tr>
-                <tr>
-                    <td><label for="email">E-mail:</label></td>
-                    <td><input type="email" id="email" name="email" required placeholder="Escreva seu E-mail."></td>
-                </tr>
-                <tr>
-                    <td><label for="telefone">Telefone:</label></td>
-                    <td><input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX"></td>
-                </tr>
-            </tbody>
-        </table>
-        <br>
+    <table border="1">
+        <tbody>
+            <tr>
+                <td><label for="nome">Nome:</label></td>
+                <td><input type="text" id="nome" name="nome" required placeholder="Preencha com seu nome."></td>
+            </tr>
+            <tr>
+                <td><label for="email">E-mail:</label></td>
+                <td><input type="email" id="email" name="email" required placeholder="Escreva seu E-mail."></td>
+            </tr>
+            <tr>
+                <td><label for="telefone">Telefone:</label></td>
+                <td><input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX"></td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
 
-            <label for="estados">Me informe seu estado:</label><br>
+ <label for="estados">Me informe seu estado:</label><br>
             <select name="estados" id="estados" required>
                 <option value="Selecionar">Selecione</option>
                 <option value="AC">Acre</option>
@@ -73,62 +73,64 @@
         <input type="radio" id="sim" name="jurídica" value="sim">Sim
         <input type="radio" id="não" name="jurídica" value="não">Não
         <br><br>
-        
-        <table border="1">
+    
+    <table border="1">
         <tbody>
-        <tr>
-            <td><label for="horário">Melhor horário de contato: &nbsp;</label></td>
-        </tr>
-        <tr>
-            <td><table><input type="checkbox" name="manhã">Manhã</table></td>
-        </tr>
-        <tr>
-            <td><table><input type="checkbox" name="tarde">Tarde</table></td>
-        </tr>
-        <tr>
-            <td><table><input type="checkbox" name="noite">Noite</table></td>
-        </tr>
+            <tr>
+                <td><label for="horario">Melhor horário de contato:</label></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="horario_contato" value="manha"> Manhã</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="horario_contato" value="tarde"> Tarde</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="horario_contato" value="noite"> Noite</td>
+            </tr>
         </tbody>
-        </table>
-        <br>
+    </table>
+    <br>
 
-        <table border="1" required="1">
-            <tbody>
+    <table border="1">
+        <tbody>
             <tr>
-                <td><label for="horário">Qual o tipo de serviço que deseja? &nbsp;</label></td>
+                <td><label for="servico">Qual o tipo de serviço que deseja?</label></td>
             </tr>
             <tr>
-                <td><table><input type="checkbox" name="Estática">Página Estática</table></td>
+                <td><input type="checkbox" name="servico" value="Estatica"> Página Estática</td>
             </tr>
             <tr>
-                <td><table><input type="checkbox" name="Avançada">Página Avançada</table></td>
+                <td><input type="checkbox" name="servico" value="Avancada"> Página Avançada</td>
             </tr>
             <tr>
-                <td><table><input type="checkbox" name="Dinâmica">Página Dinâmica</table></td>
+                <td><input type="checkbox" name="servico" value="Dinamica"> Página Dinâmica</td>
             </tr>
-                <td><table><input type="checkbox" name="Super Avançada">Página Super Avançada</table></td>
-            </tbody>
-            <tfoot>
-        </table>
-            <br>
+            <tr>
+                <td><input type="checkbox" name="servico" value="Super_Avancada"> Página Super Avançada</td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
 
-            <table border="1">
-                <tr>
-                    <td><label for="numero">Quantas páginas?</label></td>
-                </tr>
-                <tr>
-                    <td><input type="number" id="numero" name="numero" required placeholder="Número de páginas."></td>
-                </tr>
-            </table>
-            <br>
+    <table border="1">
+        <tr>
+            <td><label for="numero">Quantas páginas?</label></td>
+        </tr>
+        <tr>
+            <td><input type="number" id="numero" name="numero" required placeholder="Número de páginas."></td>
+        </tr>
+    </table>
+    <br>
 
-        <table>
-            <label for="mensagem" required placeholder="Escreva seu belo nome.">Compartilhe e descreva aqui que você pretende contratar:</label><br>
-            <textarea id="mensagem" name="mensagem" rows="8" cols="50" placeholder="Escreva aqui!"></textarea><br><br>
-        </table>
+    <label for="mensagem">Compartilhe e descreva aqui o que você pretende contratar:</label><br>
+    <textarea id="mensagem" name="mensagem" rows="8" cols="50" placeholder="Escreva aqui!"></textarea>
+    <br><br>
 
-        <input type="reset" value="Limpar"> <br><br>
-        <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+    <input type="submit" value="Enviar">
+
+    </form>
 
         <hr style="border: 2px solid rgb(0, 0, 0);">
 
